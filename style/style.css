@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  
+}
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Space Grotesk', sans-serif; */
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style: none;
+}
+/* Header: ---------------------- */
+
+header {
+  background: #1a1a1a;
+  height: 100vh;
+  position: relative;
+}
+#navbar {
+  padding: 30px 40px;
+  font-size: 17px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  max-width: 1920px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+

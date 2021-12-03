@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>00011347</title>
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <h3><img src="./assets/logo-icon.svg" alt="logo_icon">Fotogram</h3>
-      <h3><img src="./assets/hamburger-menu.svg" alt="hamburger_menu">Menu</h3>
-    </nav>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>00011347</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@600&family=Space+Grotesk:wght@700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav id="navbar">
+          <h3><a href="./index.html"><img src="./assets/SVG/logo-icon.svg" alt="logo_icon" />  Fotogram</a></h3>
+          <h3>
+            <img src="./assets/SVG/hamburger-menu.svg" alt="hamburger_menu" />  Menu
+          </h3>
+        </nav>
+      </div>
+
+      <div id="header">
+        <div class="container">
+          <!-- Slider -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./assets/bg2.jpg" style="width: 100%" />
+              <div class="text">
+                <span class="mainText">Capturing</span> moment of Life
+              </div>
+              <div class="wiut">
+                This website was created to fulfill Web Technology module’s
+                requirements and does not represent an actual company or service
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/bg.jpg" style="width: 100%" />
+              <div class="text">
+                The ambient in <span class="mainText">Motion</span>
+              </div>
+              <div class="wiut">
+                This website was created to fulfill Web Technology module’s
+                requirements and does not represent an actual company or service
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/bg3.jpg" style="width: 100%" />
+              <div class="text">
+                <span class="mainText">Black</span> & White feels
+              </div>
+              <div class="wiut">
+                This website was created to fulfill Web Technology module’s
+                requirements and does not represent an actual company or service
+              </div>
+            </div>
+          </div>
+          <div class="prev-next">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+
+      
+    </header>
+  </body>
+  <script src="./index.js"></script>
 </html>
