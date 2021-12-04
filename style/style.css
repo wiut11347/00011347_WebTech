@@ -19,11 +19,10 @@ a{
   text-decoration: none;
   color: #fff;
 }
-ul{
+li{
   list-style: none;
 }
 /* Header: ---------------------- */
-
 header {
   background: #1a1a1a;
   height: 100vh;
