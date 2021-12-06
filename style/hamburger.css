@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .hamburger {
   display: none;
@@ -18,14 +17,14 @@
   margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.6rem;
   font-weight: 400;
   color: #fff;
 }
 
-.nav-link:hover{
-  color: #6C5CCC;
+.nav-link:hover {
+  color: #6c5ccc;
 }
 
 .nav-logo {

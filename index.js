@@ -35,9 +35,9 @@ function showSlides(n) {
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
+hamburger.addEventListener("click", menu);
 
-function mobileMenu() {
+function menu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }

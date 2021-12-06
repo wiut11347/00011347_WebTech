@@ -3,11 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container{
+.container-full {
   max-width: 1920px;
   margin: auto;
   position: relative;
-  
+}
+.container{
+  max-width: 1120px;
+  margin: auto;
 }
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Space Grotesk', sans-serif; */
@@ -15,13 +18,17 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
-li{
+li {
   list-style: none;
 }
+.uppercase {
+  text-decoration: uppercase;
+}
+
 /* Header: ---------------------- */
 header {
   background: #1a1a1a;
@@ -43,3 +50,32 @@ header {
   z-index: 1;
 }
 
+/* Mission section ------------------*/
+.mission-header{
+  height:100vh;
+}
+.upper-flex{
+  display: flex;
+  justify-content: space-around;
+  
+}
+#mission{
+  background-color: #fff;
+}
+.violet {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #6C5CCC;
+}
+.mission-big{
+  flex: 1;
+}
+.mission-big h3{
+  font-size: 40px;
+}
+.mission-small{
+  flex:1;
+}
+.mission-small p{
+  font-size: 15px;
+}
