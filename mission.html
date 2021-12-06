@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./style/hamburger.css" />
     <style>
       /* Fonts from google fonts (hope it is not considered as library)*/
-      @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@600&family=Space+Grotesk:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@600&family=Roboto:wght@500&family=Space+Grotesk:wght@700&display=swap");
     </style>
   </head>
   <body>
-    <header>
+    <!-- Navbar -->
+    <header class="nav-out">
       <div class="container-full">
         <nav id="navbar">
           <h3>
@@ -50,6 +51,8 @@
         </nav>
       </div>
     </header>
+
+    <!-- Main part -->
     <section id="mission" class="container">
       <div class="upper-flex">
         <div class="mission-big">
@@ -69,12 +72,17 @@
             Integer neque, tristique aliquet sit augue sit sit. Senectus.
           </p>
           <h4 class="violet uppercase">
-            <img src="./assets/mission_line.png" alt="just another line" /> Read
-            more
+            <img src="./assets/mission_line.png" alt="just another line" /><a
+              href="#trio"
+            >
+              Read more</a
+            >
           </h4>
         </div>
       </div>
     </section>
-    <script src="./index.js"></script>
+
+    <article id="trio"></article>
+    <script src="./hamburger.js"></script>
   </body>
 </html>

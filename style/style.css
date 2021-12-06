@@ -4,19 +4,22 @@
   box-sizing: border-box;
 }
 .container-full {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: auto;
   position: relative;
 }
-.container{
+.container {
   max-width: 1120px;
   margin: auto;
 }
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Space Grotesk', sans-serif; */
+/* font-family: 'Monoton', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
 }
 a {
   text-decoration: none;
@@ -26,7 +29,11 @@ li {
   list-style: none;
 }
 .uppercase {
-  text-decoration: uppercase;
+  text-transform: uppercase;
+}
+/* for navbar in all sections, excluding Home section */
+.nav-out {
+  height: 8vh;
 }
 
 /* Header: ---------------------- */
@@ -36,7 +43,7 @@ header {
   position: relative;
 }
 #navbar {
-  padding: 30px 40px;
+  padding: 20px 40px;
   font-size: 17px;
   color: #fff;
   display: flex;
@@ -51,31 +58,40 @@ header {
 }
 
 /* Mission section ------------------*/
-.mission-header{
-  height:100vh;
+#mission {
+  padding: 100px 0;
 }
-.upper-flex{
+.mission-header {
+  height: 100vh;
+}
+.upper-flex {
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: space-between;
 }
-#mission{
+#mission {
   background-color: #fff;
 }
-.violet {
+.violet,
+.violet a {
   font-size: 12px;
   font-family: "Poppins", sans-serif;
-  color: #6C5CCC;
+  color: #6c5ccc;
 }
-.mission-big{
+.mission-big {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.mission-big h3 {
+  font-size: 35px;
+}
+.mission-small {
   flex: 1;
 }
-.mission-big h3{
-  font-size: 40px;
-}
-.mission-small{
-  flex:1;
-}
-.mission-small p{
-  font-size: 15px;
+.mission-small p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0 70px 0;
+  line-height: 1.4;
 }
