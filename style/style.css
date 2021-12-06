@@ -9,7 +9,7 @@
   position: relative;
 }
 .container {
-  max-width: 1120px;
+  max-width: 1220px;
   margin: auto;
 }
 /* font-family: 'Monoton', cursive;
@@ -31,6 +31,7 @@ li {
 .uppercase {
   text-transform: uppercase;
 }
+
 /* for navbar in all sections, excluding Home section */
 .nav-out {
   height: 0vh;
@@ -73,7 +74,7 @@ header {
 }
 .violet,
 .violet a {
-  font-size: 12px;
+  font-size: 13px;
   font-family: "Poppins", sans-serif;
   color: #6c5ccc;
 }
@@ -115,4 +116,96 @@ header {
 }
 #trio p {
   font-size: 15px;
+}
+
+/* Order section ------------------ */
+#order {
+  height: 80vh;
+  background: #1a1a1a;
+  color: #fff;
+}
+.order_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 190px 0;
+}
+.start_font {
+  text-decoration: underline;
+}
+.start_order h2 {
+  font-size: 3.3vw;
+  padding: 20px 0 40px 0;
+}
+.start_order p {
+  color: #7a7a7a;
+}
+.apply_now {
+  padding: 12px 24px;
+  border: solid #6c5ccc 1px;
+  border-radius: 30px;
+}
+
+/* Add transition to hover! */
+.apply_now:hover {
+  color: #6c5ccc;
+  transition: color 2s ease-out;
+}
+
+/* Pricing (order section)*/
+#order-process {
+  background-color: #fafafa;
+  padding: 20px 0 100px 0;
+}
+.pricing {
+  padding: 100px 0 48px 0;
+}
+#order-process h3 {
+  font-size: 38px;
+}
+
+#order-process .packages {
+  display: flex;
+  justify-content: space-between;
+}
+.package {
+  background: #fff;
+  border: 1px solid #7a7a7a;
+  border-radius: 10px;
+  padding: 50px;
+  margin-right: 40px;
+  position: relative;
+}
+.package h5 {
+  font-size: 22px;
+}
+.package h2 {
+  color: #7a7a7a;
+}
+.package .dollar {
+  font-size: 70px;
+  color: #000;
+}
+.package ul li {
+  list-style-type: disc;
+  line-height: 29px;
+}
+.package ul {
+  padding: 25px 5px 90px 5px;
+}
+.package .choose {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 9px 50px;
+  margin: 15px 25px;
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+}
+.package .btn-violet {
+  background-color: #6c5ccc;
+  color: #fff;
+}
+.package .star {
+  width: 20px;
 }
