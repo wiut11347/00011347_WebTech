@@ -22,9 +22,13 @@
   font-weight: 400;
   color: #fff;
 }
+.current{
+  color: #6c5ccc;
+}
 
 .nav-link:hover {
   color: #6c5ccc;
+  border-bottom: #6c5ccc solid 1px;
 }
 
 .nav-logo {

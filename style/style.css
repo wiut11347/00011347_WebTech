@@ -18,7 +18,7 @@ font-family: 'Roboto', sans-serif;
 */
 body {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
 }
 a {
@@ -33,7 +33,7 @@ li {
 }
 /* for navbar in all sections, excluding Home section */
 .nav-out {
-  height: 8vh;
+  height: 0vh;
 }
 
 /* Header: ---------------------- */
@@ -55,11 +55,11 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
+  background: #1a1a1a;
 }
-
 /* Mission section ------------------*/
 #mission {
-  padding: 100px 0;
+  padding: 220px 0 100px 0;
 }
 .mission-header {
   height: 100vh;
@@ -91,7 +91,28 @@ header {
 }
 .mission-small p {
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
   padding: 10px 0 70px 0;
   line-height: 1.4;
+}
+
+#trio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0 150px 0;
+}
+.collections img {
+  padding-bottom: 30px;
+}
+.card {
+  padding: 0 20px;
+}
+#trio h4 {
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-family: "Space Grotesk", sans-serif;
+}
+#trio p {
+  font-size: 15px;
 }
