@@ -7,10 +7,12 @@
   max-width: 1440px;
   margin: auto;
   position: relative;
+  overflow: auto;
 }
 .container {
   max-width: 1220px;
   margin: auto;
+  overflow: auto;
 }
 /* font-family: 'Monoton', cursive;
 font-family: 'Poppins', sans-serif;
@@ -31,7 +33,21 @@ li {
 .uppercase {
   text-transform: uppercase;
 }
-
+.btn{
+  padding: 7.5px 18px;
+  border: 1px solid #54595f;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+}
+.btn-violet{
+  background-color: #6c5ccc;
+  color: #fff;
+  border: 1px solid #7a7a7a;
+  border-radius: 30px;
+  padding: 9px 50px;
+  cursor: pointer;
+}
 /* for navbar in all sections, excluding Home section */
 .nav-out {
   height: 0vh;
@@ -118,7 +134,7 @@ header {
   font-size: 15px;
 }
 
-/* Order section ------------------ */
+/* Order section -------------------- */
 #order {
   height: 80vh;
   background: #1a1a1a;
@@ -193,19 +209,71 @@ header {
 .package ul {
   padding: 25px 5px 90px 5px;
 }
-.package .choose {
+.choose {
+  font-family: "Roboto", sans-serif;
   position: absolute;
   bottom: 0;
   text-align: center;
   padding: 9px 50px;
-  margin: 15px 25px;
+  margin: 15px 25px 40px 25px;
   border: 1px solid #7a7a7a;
   border-radius: 30px;
+  background: #fff;
+  cursor: pointer;
 }
-.package .btn-violet {
-  background-color: #6c5ccc;
-  color: #fff;
+.middle_btn{
+  text-align: center;
+  margin-left: 36px;
 }
+
 .package .star {
   width: 20px;
+}
+
+/* Forms */
+.forms {
+  padding: 50px 0px;
+  width: 50%;
+}
+.form {
+  border: 1px #54595f solid;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 12px 0;
+}
+.form label {
+  display: block;
+}
+.form input {
+  border: none;
+  width: 100%;
+  padding: 5px 0;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.optional{
+  font-size: 0.7rem;
+}
+#preference{
+  padding-top: 80px;
+}
+.preference_add{
+  display: flex;
+  justify-content: space-between;
+}
+.preference_add .pref-left{
+  width: 40%;
+}
+#empty{
+  width: 40%;
+  overflow: auto;
+}
+.hidden{
+  display:none;
+}
+.visible{
+  display: block;
+}
+.add_p{
+  display:block;
 }
