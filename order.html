@@ -119,70 +119,85 @@
           </div>
         </div>
 
-        <div id="preference">
-          <form action="#" method="get" class="preference">
-            <div class="preference_add">
-              <!-- existing one -->
-              <div class="form name pref-left">
-                <label for="text"
-                  >Preference <span class="optional">*optional</span></label
-                >
-                <input
-                  type="text"
-                  name="name"
-                  id="prefer_any"
-                  maxlength="90"
-                  placeholder="e.g. additional access"
-                  required
-                />
-              </div>
+        <!-- Flex for details and map -->
+        <div id="details_map">
+          <div class="details">
+            <div id="preference">
+              <form action="#" method="get" class="preference">
+                <div class="preference_add">
+                  <!-- existing one -->
+                  <div class="form name pref-left">
+                    <label for="text"
+                      >Preference <span class="optional">*optional</span></label
+                    >
+                    <input
+                      type="text"
+                      name="name"
+                      id="prefer_any"
+                      maxlength="90"
+                      placeholder="e.g. additional access"
+                      required
+                    />
+                  </div>
 
-              <!-- empty one -->
-              <div id="empty" class="form hidden">
-                <label for="text">Preference list:</label>
-                <!-- <div id="add_h"></div> -->
-                <p id="add_p"></p>
-              </div>
+                  <!-- empty one -->
+                  <div id="empty" class="form hidden">
+                    <label for="text">Preference list:</label>
+                    <!-- <div id="add_h"></div> -->
+                    <p id="add_p"></p>
+                  </div>
+                </div>
+
+                <div>
+                  <button type="button" id="button" class="btn-violet entry">
+                    + Add entry
+                  </button>
+                </div>
+              </form>
             </div>
 
-            <div>
-              <button type="button" id="button" class="btn-violet entry">
-                + Add entry
-              </button>
+            <!-- Client details -->
+            <div class="details_map">
+              <form action="#" method="get" class="forms">
+                <div class="form name">
+                  <label for="name">Name*</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form_no_button"
+                    placeholder="e.g. John Doe"
+                    required
+                  />
+                </div>
+                <div class="form email">
+                  <label for="email">Mail*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="e.g. jdoe@email.com"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <input type="submit" value="Send" class="btn-violet" />
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
+          <img src="./assets/stock.jpg" alt="photo stock" class="stock_order" />
+          <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11988.346389362328!2d69.2833793!3d41.3069797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda0402847aed7b96!2sWestminster%20International%20University%20in%20Tashkent!5e0!3m2!1sen!2s!4v1638907998822!5m2!1sen!2s"
+              width="600"
+              height="500"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe> -->
         </div>
-
-        <!-- Client details -->
-        <form action="#" method="get" class="forms">
-          <div class="form name">
-            <label for="name">Name*</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form_no_button"
-              placeholder="e.g. John Doe"
-              required
-            />
-          </div>
-          <div class="form email">
-            <label for="email">Mail*</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="e.g. jdoe@email.com"
-              id="email"
-              required
-            />
-          </div>
-          <div>
-            <input type="submit" value="Send" class="btn-violet" />
-          </div>
-        </form>
       </div>
     </section>
-
     <script src="./hamburger.js"></script>
     <script src="./index.js"></script>
   </body>

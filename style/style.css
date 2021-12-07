@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container-full {
   max-width: 1440px;
   margin: auto;
@@ -33,14 +36,14 @@ li {
 .uppercase {
   text-transform: uppercase;
 }
-.btn{
+.btn {
   padding: 7.5px 18px;
   border: 1px solid #54595f;
   border-radius: 30px;
   background-color: #fff;
   color: #000;
 }
-.btn-violet{
+.btn-violet {
   background-color: #6c5ccc;
   color: #fff;
   border: 1px solid #7a7a7a;
@@ -221,7 +224,7 @@ header {
   background: #fff;
   cursor: pointer;
 }
-.middle_btn{
+.middle_btn {
   text-align: center;
   margin-left: 36px;
 }
@@ -233,7 +236,7 @@ header {
 /* Forms */
 .forms {
   padding: 50px 0px;
-  width: 50%;
+  width: 100%;
 }
 .form {
   border: 1px #54595f solid;
@@ -251,29 +254,55 @@ header {
   margin: 5px 0;
   border-radius: 5px;
 }
-.optional{
+.optional {
   font-size: 0.7rem;
 }
-#preference{
-  padding-top: 80px;
+
+.preference_add {
+  /* display: flex;
+  justify-content: space-between; */
 }
-.preference_add{
+.preference_add .pref-left {
+  width: 100%;
+  height: 100%;
+}
+#empty {
+  width: 100%;
+  overflow: auto;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.add_p {
+  display: block;
+}
+.details_map {
   display: flex;
   justify-content: space-between;
 }
-.preference_add .pref-left{
-  width: 40%;
+.map iframe {
+  border-radius: 50px;
 }
-#empty{
-  width: 40%;
-  overflow: auto;
+#details_map {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 180px;
 }
-.hidden{
-  display:none;
+.details {
+  flex: 2;
 }
-.visible{
-  display: block;
-}
-.add_p{
-  display:block;
+.stock_order {
+  flex: 1;
+  margin-left: 2rem;
+  width: 45%;
+  height: 45%;
+  border-radius: 20px;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(47, 79, 79) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(108, 92, 204) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    rgb(112, 128, 144) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    rgb(192, 192, 192) 40px -40px;
 }
