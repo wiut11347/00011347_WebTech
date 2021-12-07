@@ -5,26 +5,35 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+    /* 1rem = 9px */
+  }
+}
+
 .container-full {
-  max-width: 1440px;
+  max-width: 144rem;
   margin: auto;
   position: relative;
   overflow: auto;
 }
 .container {
-  max-width: 1220px;
+  max-width: 122rem;
   margin: auto;
   overflow: auto;
+  padding: 0 1.5rem;
 }
 /* font-family: 'Monoton', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 body {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
 }
 a {
   text-decoration: none;
@@ -37,9 +46,9 @@ li {
   text-transform: uppercase;
 }
 .btn {
-  padding: 7.5px 18px;
+  padding: 0.75rem 1.8rem;
   border: 1px solid #54595f;
-  border-radius: 30px;
+  border-radius: 3rem;
   background-color: #fff;
   color: #000;
 }
@@ -47,8 +56,8 @@ li {
   background-color: #6c5ccc;
   color: #fff;
   border: 1px solid #7a7a7a;
-  border-radius: 30px;
-  padding: 9px 50px;
+  border-radius: 3rem;
+  padding: 0.9rem 5rem;
   cursor: pointer;
 }
 /* for navbar in all sections, excluding Home section */
@@ -63,13 +72,13 @@ header {
   position: relative;
 }
 #navbar {
-  padding: 20px 40px;
-  font-size: 17px;
+  padding: 2rem 4rem;
+  font-size: 1.7rem;
   color: #fff;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  max-width: 1920px;
+  max-width: 192rem;
   margin: auto;
   top: 0;
   left: 0;
@@ -77,9 +86,12 @@ header {
   z-index: 1;
   background: #1a1a1a;
 }
+#navbar h3 a {
+  font-size: 2rem;
+}
 /* Mission section ------------------*/
 #mission {
-  padding: 220px 0 100px 0;
+  padding: 22rem 0 10rem 0;
 }
 .mission-header {
   height: 100vh;
@@ -93,7 +105,7 @@ header {
 }
 .violet,
 .violet a {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
   color: #6c5ccc;
 }
@@ -104,14 +116,14 @@ header {
   flex-direction: column;
 }
 .mission-big h3 {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 .mission-small {
   flex: 1;
 }
 .mission-small p {
-  font-size: 18px;
-  padding: 10px 0 70px 0;
+  font-size: 1.8rem;
+  padding: 1rem 0 7rem 0;
   line-height: 1.4;
 }
 
@@ -120,21 +132,26 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 100px 0 150px 0;
+  padding: 10rem 0 15rem 0;
+}
+#trio img {
+  width: 24%;
+  height: 24%;
 }
 .collections img {
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
+  /* width:30%; */
 }
 .card {
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 #trio h4 {
-  padding-bottom: 20px;
-  font-size: 22px;
+  padding-bottom: 2rem;
+  font-size: 2.2rem;
   font-family: "Space Grotesk", sans-serif;
 }
 #trio p {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 /* Order section -------------------- */
@@ -147,22 +164,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 190px 0;
+  padding: 19rem 0;
 }
 .start_font {
   text-decoration: underline;
 }
 .start_order h2 {
-  font-size: 3.3vw;
-  padding: 20px 0 40px 0;
+  font-size: 6.4rem;
+  padding: 2rem 0 4rem 0;
 }
 .start_order p {
   color: #7a7a7a;
 }
 .apply_now {
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   border: solid #6c5ccc 1px;
-  border-radius: 30px;
+  border-radius: 3rem;
 }
 
 /* Add transition to hover! */
@@ -174,13 +191,13 @@ header {
 /* Pricing (order section)*/
 #order-process {
   background-color: #fafafa;
-  padding: 20px 0 100px 0;
+  padding: 2rem 0 10rem 0;
 }
 .pricing {
-  padding: 100px 0 48px 0;
+  padding: 10rem 0 4.8rem 0;
 }
 #order-process h3 {
-  font-size: 38px;
+  font-size: 3.8rem;
 }
 
 #order-process .packages {
@@ -190,59 +207,58 @@ header {
 .package {
   background: #fff;
   border: 1px solid #7a7a7a;
-  border-radius: 10px;
-  padding: 50px;
-  margin-right: 40px;
+  border-radius: 1rem;
+  padding: 5rem;
   position: relative;
 }
 .package h5 {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 .package h2 {
   color: #7a7a7a;
 }
 .package .dollar {
-  font-size: 70px;
+  font-size: 7rem;
   color: #000;
 }
 .package ul li {
   list-style-type: disc;
-  line-height: 29px;
+  line-height: 2.9rem;
 }
 .package ul {
-  padding: 25px 5px 90px 5px;
+  padding: 2.5rem 0.5rem 9rem 0.5rem;
 }
 .choose {
   font-family: "Roboto", sans-serif;
   position: absolute;
   bottom: 0;
   text-align: center;
-  padding: 9px 50px;
-  margin: 15px 25px 40px 25px;
+  padding: 0.9rem 5rem;
+  margin: 1.5rem 2.5rem 4rem 2.5rem;
   border: 1px solid #7a7a7a;
-  border-radius: 30px;
+  border-radius: 3rem;
   background: #fff;
   cursor: pointer;
 }
 .middle_btn {
   text-align: center;
-  margin-left: 36px;
+  margin-left: 3.6rem;
 }
 
 .package .star {
-  width: 20px;
+  width: 2rem;
 }
 
 /* Forms */
 .forms {
-  padding: 50px 0px;
+  padding: 5rem 0px;
   width: 100%;
 }
 .form {
   border: 1px #54595f solid;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 12px 0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1.2rem 0;
 }
 .form label {
   display: block;
@@ -250,12 +266,12 @@ header {
 .form input {
   border: none;
   width: 100%;
-  padding: 5px 0;
-  margin: 5px 0;
-  border-radius: 5px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
 }
 .optional {
-  font-size: 0.7rem;
+  font-size: 1.1rem;
 }
 
 .preference_add {
@@ -284,12 +300,12 @@ header {
   justify-content: space-between;
 }
 .map iframe {
-  border-radius: 50px;
+  border-radius: 5rem;
 }
 #details_map {
   display: flex;
   justify-content: space-between;
-  padding-top: 180px;
+  padding-top: 18rem;
 }
 .details {
   flex: 2;
@@ -299,10 +315,30 @@ header {
   margin-left: 2rem;
   width: 45%;
   height: 45%;
-  border-radius: 20px;
+  border-radius: 2rem;
   box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
     rgb(47, 79, 79) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
     rgb(108, 92, 204) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
     rgb(112, 128, 144) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
     rgb(192, 192, 192) 40px -40px;
+}
+
+@media only screen and (max-width: 720px) {
+  .upper-flex {
+    display: block;
+  }
+  #mission {
+    padding: 10rem 0;
+  }
+  .mission-small {
+    padding-top: 5rem;
+  }
+  #trio {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 570px) {
+  #trio {
+    display: block;
+  }
 }
