@@ -27,3 +27,10 @@ function add() {
   }
 }
 
+// // Plan choosing
+// const planPro = document.getElementsByClassName('middle_btn');
+// const clickedPlan = document.getElementsByClassName('this')
+// planPro.addEventListener('click', chosen);
+// function chosen(){
+
+// }

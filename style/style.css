@@ -154,9 +154,33 @@ header {
   font-size: 1.5rem;
 }
 
+/* Portfolio images */
+.portfolio{
+  display: flex;
+  justify-content: center;
+  color:#fff;
+  background-color: #fafafa;
+ 
+}
+.img_title{
+  position: relative;
+}
+.portfolio .title{
+  position: absolute;
+  bottom:10rem;
+  left:10rem;
+}
+.portfolio .title p{
+  font-size: 1.3rem;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 1rem;
+}
+.portfolio .title h4{
+  font-size:3.2rem;
+}
 /* Order section -------------------- */
 #order {
-  height: 80vh;
+  height: 80rem;
   background: #1a1a1a;
   color: #fff;
 }
@@ -274,10 +298,6 @@ header {
   font-size: 1.1rem;
 }
 
-.preference_add {
-  /* display: flex;
-  justify-content: space-between; */
-}
 .preference_add .pref-left {
   width: 100%;
   height: 100%;
