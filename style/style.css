@@ -16,7 +16,6 @@ html {
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
-    
   }
 }
 
@@ -70,7 +69,7 @@ li {
 .nav-out {
   height: 0vh;
 }
-.width{
+.width {
   width: 100%;
 }
 /* Header: ---------------------- */
@@ -344,6 +343,66 @@ header {
     rgb(112, 128, 144) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
     rgb(192, 192, 192) 40px -40px;
 }
+/* Collections section ----------------------------- */
+#manifesto {
+  position: relative;
+  height: 90vh;
+}
+#manifesto .bg-manifesto {
+  height: 33.3rem;
+  width: 210rem;
+  margin: 0 auto;
+  background: url("../assets/wall.jpg") center center no-repeat;
+  background-size: 210rem;
+  text-align: right;
+  padding: 14.5rem 40rem;
+}
+#manifesto .bg-manifesto h3 {
+  font-size: 38px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+}
+#manifesto .bg-manifesto p {
+  font-size: 1.3rem;
+}
+/* Card on left: Every Moment counts ...  */
+#moment {
+  position: absolute;
+  background: #000;
+  top: 25rem;
+  color: #fff;
+  width: 74rem;
+  padding: 8rem 4rem 2rem 4rem;
+}
+.moment_main_title {
+  font-size: 2.8rem;
+  padding-bottom: 3rem;
+}
+.num_moment {
+  display: flex;
+  margin-bottom: 3rem;
+  padding: 20px 10px;
+}
+.moment_title {
+  padding: 0 1rem 0 2rem;
+}
+.moment_title h5 {
+  font-size: 1.7rem;
+}
+.moment_title p {
+  font-size: 1.5rem;
+  color: #7a7a7a;
+}
+.num {
+  font-size: 6rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Collections */
+.rr {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1850px) {
   .portfolio {
     display: none;
@@ -362,10 +421,10 @@ header {
     margin: 2rem 0;
   }
 }
-@media only screen and (max-width: 830px){
-  .package{
-    padding:2rem;
-    width:40rem;
+@media only screen and (max-width: 830px) {
+  .package {
+    padding: 2rem;
+    width: 40rem;
     margin: 2rem auto;
   }
   #order-process .packages {
@@ -374,9 +433,9 @@ header {
   #details_img {
     display: block;
   }
-  .stock_order{
+  .stock_order {
     margin-left: 10rem;
-    width:60%;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -393,49 +452,51 @@ header {
     padding-top: 0;
   }
 }
-@media only screen and (max-width: 630px){
-  .start_order h2{
+@media only screen and (max-width: 630px) {
+  .start_order h2 {
     font-size: 5rem;
   }
-  p,h2, h3, h4{
-    font-size:80%;
+  p,
+  h2,
+  h3,
+  h4 {
+    font-size: 80%;
   }
-  #order{
-    height:60rem;
+  #order {
+    height: 60rem;
   }
-  .width{
-    width:80%;
+  .width {
+    width: 80%;
     margin-left: 3rem;
   }
-  .entry{
-    margin-left:3rem;
+  .entry {
+    margin-left: 3rem;
   }
-  #order_process .container{
+  #order_process .container {
     max-width: 1rem;
   }
 }
 @media only screen and (max-width: 570px) {
-  .start_order h2{
+  .start_order h2 {
     font-size: 3.5rem;
   }
-  .package #dollar{
-    font-size:4rem;
+  .package #dollar {
+    font-size: 4rem;
   }
-  .order_description{
+  .order_description {
     padding: 0 4rem;
   }
   #trio {
     display: block;
   }
-  .width{
-    width:50%;
+  .width {
+    width: 50%;
   }
-
 }
-@media only screen and (max-width: 430px){
-  .package{
-    padding:2rem;
-    width:30rem;
+@media only screen and (max-width: 430px) {
+  .package {
+    padding: 2rem;
+    width: 30rem;
     margin: 2rem auto;
   }
 }
