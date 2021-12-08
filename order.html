@@ -74,17 +74,16 @@
 
     <!-- Portfolio images -->
     <div class="portfolio">
-      <img src="./assets/first1.jpg" width="500" height="730" alt="portfolio image" class="img left_img">
+      <img src="./assets/first1.jpg"  width='700' height='700' alt="portfolio image" class="img left_img">
       <div class="img_title">
-        <img src="./assets/first2.jpg" width="1000" height="730" alt="portfolio image" class="img center_img">
+        <img src="./assets/first2.jpg" width="900" height='700' alt="portfolio image" class="img center_img">
         <div class="title">
           <p class="uppercase">photobook</p>
           <h4>NY City Pandemic</h4>
         </div>
       </div>
-      <img src="./assets/first3.jpg" width="500" height="730" alt="portfolio image" class="img right_img">
+      <img src="./assets/first3.jpg" width='700' height='700' alt="portfolio image" class="img right_img">
     </div>
-
     <!-- Pricing -->
     <section id="order-process">
       <div class="container">
@@ -92,7 +91,7 @@
         <div class="packages">
           <div class="package">
             <h5 class="uppercase">Free</h5>
-            <h2><span class="dollar">$0</span>/mo.</h2>
+            <h2><span id="dollar">$0</span>/mo.</h2>
             <ul>
               <li>5 users</li>
               <li>5GB storage</li>
@@ -105,7 +104,7 @@
             <h5 class="uppercase">
               <img src="./assets/star.png" class="star" alt="star" /> Pro
             </h5>
-            <h2><span class="dollar" id=dollar>$9</span>/mo.</h2>
+            <h2><span id="dollar">$9</span>/mo.</h2>
             <ul>
               <li>5 users</li>
               <li>5GB storage</li>
@@ -114,11 +113,11 @@
               <li>Dedicated support</li>
               <li>Free linked domain</li>
             </ul>
-            <button class="btn-violet middle_btn" onclick="changeColor(event)">Choose plan</button>
+            <button class="btn-violet middle_btn" onclick="changeColor()">Choose plan</button>
           </div>
           <div class="package">
             <h5 class="uppercase">Premium</h5>
-            <h2><span class="dollar">$49</span>/mo.</h2>
+            <h2><span id="dollar">$49</span>/mo.</h2>
             <ul>
               <li>5 users</li>
               <li>5GB storage</li>
@@ -132,13 +131,13 @@
         </div>
 
         <!-- Flex for details and map -->
-        <div id="details_map">
+        <div id="details_img">
           <div class="details">
             <div id="preference">
               <form action="#" method="get" class="preference">
                 <div class="preference_add">
                   <!-- existing one -->
-                  <div class="form name pref-left">
+                  <div class="form name pref-left width">
                     <label for="text"
                       >Preference <span class="optional">*optional</span></label
                     >
@@ -153,10 +152,10 @@
                   </div>
 
                   <!-- empty one -->
-                  <div id="empty" class="form hidden">
+                  <div id="empty" class="form hidden width">
                     <label for="text">Preference list:</label>
                     <!-- <div id="add_h"></div> -->
-                    <p id="add_p" "></p>
+                    <p id="add_p"></p>
                   </div>
                 </div>
 
@@ -169,8 +168,8 @@
             </div>
 
             <!-- Client details -->
-            <div class="details_map">
-              <form action="#" method="get" class="forms">
+            <div class="details_img">
+              <form action="#" method="get" class="forms width">
                 <div class="form name">
                   <label for="name">Name*</label>
                   <input

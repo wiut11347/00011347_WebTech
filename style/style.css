@@ -10,7 +10,13 @@ html {
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
-    /* 1rem = 9px */
+    /*9px */
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+    
   }
 }
 
@@ -64,7 +70,9 @@ li {
 .nav-out {
   height: 0vh;
 }
-
+.width{
+  width: 100%;
+}
 /* Header: ---------------------- */
 header {
   background: #1a1a1a;
@@ -160,6 +168,9 @@ header {
   justify-content: center;
   color: #fff;
   background-color: #fafafa;
+  min-width: 100%;
+  min-height: 60%;
+  margin: 0 auto;
 }
 .img_title {
   position: relative;
@@ -240,7 +251,7 @@ header {
 .package h2 {
   color: #7a7a7a;
 }
-.package .dollar {
+.package #dollar {
   font-size: 7rem;
   color: #000;
 }
@@ -275,7 +286,6 @@ header {
 /* Forms */
 .forms {
   padding: 5rem 0px;
-  width: 100%;
 }
 .form {
   border: 1px #54595f solid;
@@ -298,11 +308,9 @@ header {
 }
 
 .preference_add .pref-left {
-  width: 100%;
   height: 100%;
 }
 #empty {
-  width: 100%;
   overflow: auto;
 }
 .hidden {
@@ -314,14 +322,7 @@ header {
 .add_p {
   display: block;
 }
-.details_map {
-  display: flex;
-  justify-content: space-between;
-}
-.map iframe {
-  border-radius: 5rem;
-}
-#details_map {
+#details_img {
   display: flex;
   justify-content: space-between;
   padding-top: 18rem;
@@ -330,6 +331,7 @@ header {
   flex: 2;
   width: 60rem;
 }
+
 .stock_order {
   flex: 1;
   margin-left: 2rem;
@@ -342,7 +344,41 @@ header {
     rgb(112, 128, 144) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
     rgb(192, 192, 192) 40px -40px;
 }
-
+@media only screen and (max-width: 1850px) {
+  .portfolio {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .order_description {
+    display: block;
+    padding: 0 10rem;
+    overflow: visible;
+  }
+  .start_order {
+    padding: 12rem 0;
+  }
+  .apply_now {
+    margin: 2rem 0;
+  }
+}
+@media only screen and (max-width: 830px){
+  .package{
+    padding:2rem;
+    width:40rem;
+    margin: 2rem auto;
+  }
+  #order-process .packages {
+    display: block;
+  }
+  #details_img {
+    display: block;
+  }
+  .stock_order{
+    margin-left: 10rem;
+    width:60%;
+  }
+}
 @media only screen and (max-width: 720px) {
   .upper-flex {
     display: block;
@@ -357,8 +393,45 @@ header {
     padding-top: 0;
   }
 }
+@media only screen and (max-width: 630px){
+  .start_order h2{
+    font-size: 5rem;
+  }
+  p,h2, h3, h4{
+    font-size:80%;
+  }
+  #order{
+    height:60rem;
+  }
+  .width{
+    width:80%;
+    margin-left: 3rem;
+  }
+  .entry{
+    margin-left:3rem;
+  }
+}
 @media only screen and (max-width: 570px) {
+  .start_order h2{
+    font-size: 3.5rem;
+  }
+  .package #dollar{
+    font-size:4rem;
+  }
+  .order_description{
+    padding: 0 4rem;
+  }
   #trio {
     display: block;
+  }
+  .width{
+    width:50%;
+  }
+}
+@media only screen and (max-width: 430px){
+  .package{
+    padding:2rem;
+    width:30rem;
+    margin: 2rem auto;
   }
 }

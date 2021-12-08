@@ -4,8 +4,6 @@ const emptyWhile = document.getElementById("empty");
 const prefer = document.getElementById("prefer_any");
 const adding = document.getElementById("add_p");
 
-
-
 entry.addEventListener("click", add);
 let clickCount = 0;
 const arrayPref = [];
@@ -17,11 +15,9 @@ function add() {
     emptyWhile.classList.remove("hidden");
     adding.textContent = `(${arrayPref.length}) ${arrayPref} `;
     prefer.value = "";
-
   } else if (prefer.value == "") {
     alert("Input cannot be blank");
     prefer.value = "";
-    
   } else {
     alert("Please input alphabet characters only");
     prefer.value = "";
@@ -29,21 +25,21 @@ function add() {
 }
 
 // Plan choosing
-const package = document.getElementById('dollar');
+const choose = document.getElementsByClassName("choose");
 function changeColor(package) {
   if (!package) {
     package = window.event;
   }
-  
+
   var target = package.target || package.srcElement;
-  target.style.backgroundColor = 'black';
-  target.style.color = 'white';
- 
+  target.style.backgroundColor = "black";
+  target.textContent = "Chosen!";
+  target.style.color = "white";
+  choose.style.backgroundColor = "white";
 }
 
 // removing preferences
-// function myFunction(event) { 
+// function myFunction(event) {
 //   const target = event.target;
 //   target.classList.add('hidden');
-//   clickCount= clickCount -1;
 // }
