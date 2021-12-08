@@ -1,7 +1,6 @@
 // Slider ---------------------------
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
@@ -13,6 +12,16 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  const bg = document.querySelector('.slideshow-container');
+  if (slideIndex==1){
+    bg.style.background = "url('./assets/bg2.jpg') center center no-repeat";
+  }else if(slideIndex==2){
+    bg.style.background = "url('./assets/bg.jpg') center center no-repeat";
+  }else if (slideIndex==3){
+    bg.style.background = "url('./assets/bg3.jpg') center center no-repeat";
+  }else{
+    bg.style.background = "url('./assets/bg2.jpg') center center no-repeat";
+  }
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");

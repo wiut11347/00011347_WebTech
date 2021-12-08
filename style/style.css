@@ -410,6 +410,9 @@ header {
   .entry{
     margin-left:3rem;
   }
+  #order_process .container{
+    max-width: 1rem;
+  }
 }
 @media only screen and (max-width: 570px) {
   .start_order h2{
@@ -427,6 +430,7 @@ header {
   .width{
     width:50%;
   }
+
 }
 @media only screen and (max-width: 430px){
   .package{
