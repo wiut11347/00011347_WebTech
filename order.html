@@ -99,13 +99,13 @@
               <li>Unlimited public projects</li>
               <li>Community access</li>
             </ul>
-            <button class="choose">Choose plan</button>
+            <button class="choose" onclick="changeColor(event)" >Choose plan</button>
           </div>
           <div class="package">
             <h5 class="uppercase">
               <img src="./assets/star.png" class="star" alt="star" /> Pro
             </h5>
-            <h2><span class="dollar">$9</span>/mo.</h2>
+            <h2><span class="dollar" id=dollar>$9</span>/mo.</h2>
             <ul>
               <li>5 users</li>
               <li>5GB storage</li>
@@ -114,7 +114,7 @@
               <li>Dedicated support</li>
               <li>Free linked domain</li>
             </ul>
-            <button class="btn-violet middle_btn">Choose plan</button>
+            <button class="btn-violet middle_btn" onclick="changeColor(event)">Choose plan</button>
           </div>
           <div class="package">
             <h5 class="uppercase">Premium</h5>
@@ -127,7 +127,7 @@
               <li>Dedicated support</li>
               <li>Free linked domain</li>
             </ul>
-            <button class="choose">Choose plan</button>
+            <button class="choose" onclick="changeColor(event)">Choose plan</button>
           </div>
         </div>
 
@@ -156,7 +156,7 @@
                   <div id="empty" class="form hidden">
                     <label for="text">Preference list:</label>
                     <!-- <div id="add_h"></div> -->
-                    <p id="add_p"></p>
+                    <p id="add_p" "></p>
                   </div>
                 </div>
 

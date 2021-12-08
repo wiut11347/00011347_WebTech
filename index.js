@@ -8,29 +8,42 @@ const adding = document.getElementById("add_p");
 
 entry.addEventListener("click", add);
 let clickCount = 0;
+const arrayPref = [];
 function add() {
   var letters = /^[0-9a-zA-Z]+$/;
   if (prefer.value.match(letters) && prefer.value != "") {
     clickCount++;
+    arrayPref.push(prefer.value);
     emptyWhile.classList.remove("hidden");
-    const newP = document.createElement("p");
-    const content = document.createTextNode(`${clickCount} ${prefer.value}`);
-    adding.appendChild(newP);
-    newP.appendChild(content);
+    adding.textContent = `(${arrayPref.length}) ${arrayPref} `;
     prefer.value = "";
+
   } else if (prefer.value == "") {
     alert("Input cannot be blank");
     prefer.value = "";
+    
   } else {
     alert("Please input alphabet characters only");
     prefer.value = "";
   }
 }
 
-// // Plan choosing
-// const planPro = document.getElementsByClassName('middle_btn');
-// const clickedPlan = document.getElementsByClassName('this')
-// planPro.addEventListener('click', chosen);
-// function chosen(){
+// Plan choosing
+const package = document.getElementById('dollar');
+function changeColor(package) {
+  if (!package) {
+    package = window.event;
+  }
+  
+  var target = package.target || package.srcElement;
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+ 
+}
 
+// removing preferences
+// function myFunction(event) { 
+//   const target = event.target;
+//   target.classList.add('hidden');
+//   clickCount= clickCount -1;
 // }

@@ -155,28 +155,27 @@ header {
 }
 
 /* Portfolio images */
-.portfolio{
+.portfolio {
   display: flex;
   justify-content: center;
-  color:#fff;
+  color: #fff;
   background-color: #fafafa;
- 
 }
-.img_title{
+.img_title {
   position: relative;
 }
-.portfolio .title{
+.portfolio .title {
   position: absolute;
-  bottom:10rem;
-  left:10rem;
+  bottom: 10rem;
+  left: 10rem;
 }
-.portfolio .title p{
+.portfolio .title p {
   font-size: 1.3rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 1rem;
 }
-.portfolio .title h4{
-  font-size:3.2rem;
+.portfolio .title h4 {
+  font-size: 3.2rem;
 }
 /* Order section -------------------- */
 #order {
@@ -206,7 +205,7 @@ header {
   border-radius: 3rem;
 }
 
-/* Add transition to hover! */
+/* Add transition to hover */
 .apply_now:hover {
   color: #6c5ccc;
   transition: color 2s ease-out;
@@ -329,6 +328,7 @@ header {
 }
 .details {
   flex: 2;
+  width: 60rem;
 }
 .stock_order {
   flex: 1;
