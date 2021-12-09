@@ -225,6 +225,10 @@ header {
 #order-process {
   background-color: #fafafa;
   padding: 2rem 0 10rem 0;
+  overflow: hidden;
+}
+#order-process .container {
+  overflow: hidden;
 }
 .pricing {
   padding: 10rem 0 4.8rem 0;
@@ -447,9 +451,6 @@ header {
   text-decoration: underline;
 }
 @media only screen and (max-width: 1850px) {
-  .portfolio {
-    display: none;
-  }
   #manifesto {
     overflow: hidden;
   }
@@ -460,6 +461,8 @@ header {
     overflow: hidden;
   }
 }
+@media only screen and (max-width: 1750px) {
+}
 @media only screen and (max-width: 1585px) {
   #moment {
     width: 60%;
@@ -469,6 +472,9 @@ header {
   .collection_each {
     margin-right: 0;
     padding: 0 2rem;
+  }
+  .portfolio {
+    display: none;
   }
   .top_title_collections {
     padding-left: 4rem;
