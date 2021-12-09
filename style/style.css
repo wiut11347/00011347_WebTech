@@ -343,10 +343,13 @@ header {
     rgb(112, 128, 144) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
     rgb(192, 192, 192) 40px -40px;
 }
-/* Collections section ----------------------------- */
+
+/* Collections section ------------------------------------- */
 #manifesto {
   position: relative;
-  height: 90vh;
+  height: 90rem;
+  max-width: 192rem;
+  margin: 0 auto;
 }
 #manifesto .bg-manifesto {
   height: 33.3rem;
@@ -371,7 +374,7 @@ header {
   background: #000;
   top: 25rem;
   color: #fff;
-  width: 74rem;
+  width: 45%;
   padding: 8rem 4rem 2rem 4rem;
 }
 .moment_main_title {
@@ -390,8 +393,12 @@ header {
   font-size: 1.7rem;
 }
 .moment_title p {
+  padding-top: 1rem;
+  color: #54595f;
+}
+.violet-titles {
   font-size: 1.5rem;
-  color: #7a7a7a;
+  color: #6c5ccc;
 }
 .num {
   font-size: 6rem;
@@ -399,13 +406,87 @@ header {
 }
 
 /* Collections */
-.rr {
+#collections {
+  padding: 12rem 0;
+}
+.actual_collections {
+  display: flex;
+  justify-content: space-between;
+}
+.top_title_collections {
+  padding-bottom: 3.8rem;
+}
+.top_title_collections .violet-titles {
+  font-size: 1.3rem;
+}
+.top_title_collections h4 {
+  padding-top: 1rem;
+  font-size: 3.8rem;
+}
+.collection_each h5 {
+  font-size: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.collection_each {
+  margin-right: 3rem;
   text-align: center;
 }
-
+.date {
+  color: #7a7a7a;
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+.inside_img {
+  padding: 4rem 3rem;
+  width: 34.4rem;
+}
+.read_collections {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #7a7a7a;
+  text-decoration: underline;
+}
 @media only screen and (max-width: 1850px) {
   .portfolio {
     display: none;
+  }
+  #manifesto {
+    overflow: hidden;
+  }
+  #manifesto .bg-manifesto {
+    text-align: center;
+  }
+  #collections {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1585px) {
+  #moment {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1495px) {
+  .collection_each {
+    margin-right: 0;
+    padding: 0 2rem;
+  }
+  .top_title_collections {
+    padding-left: 4rem;
+  }
+}
+@media only screen and (max-width: 1425px) {
+  #manifesto .bg-manifesto {
+    text-align: center;
+  }
+  #manifesto {
+    height: 80rem;
+  }
+  .moment_main_title {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .num_moment {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 1240px) {
@@ -419,6 +500,42 @@ header {
   }
   .apply_now {
     margin: 2rem 0;
+  }
+  #manifesto .bg-manifesto {
+    text-align: left;
+    padding-left: 60%;
+  }
+  @media only screen and (max-width: 1146px) {
+    .actual_collections {
+      justify-content: center;
+    }
+    .collection_each {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+@media only screen and (max-width: 1020px) {
+  #moment {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  #manifesto {
+    height: 100rem;
+  }
+  .actual_collections {
+    display: block;
+  }
+  .collection_each {
+    padding: 0;
+    margin: 0;
+  }
+  .inside_img {
+    margin: 0;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    padding-bottom: 6rem;
   }
 }
 @media only screen and (max-width: 830px) {
@@ -437,6 +554,9 @@ header {
     margin-left: 10rem;
     width: 60%;
   }
+  #collections {
+    padding: 3rem 0;
+  }
 }
 @media only screen and (max-width: 720px) {
   .upper-flex {
@@ -450,6 +570,10 @@ header {
   }
   #trio {
     padding-top: 0;
+  }
+  #manifesto .bg-manifesto {
+    padding: 0;
+    padding: 14rem;
   }
 }
 @media only screen and (max-width: 630px) {
@@ -492,11 +616,32 @@ header {
   .width {
     width: 50%;
   }
+  .num {
+    font-size: 4rem;
+  }
+  #moment {
+    padding: 5rem 2rem;
+  }
+  .top_title_collections h4 {
+    font-size: 3rem;
+  }
+  .top_title_collections .violet-titles {
+    font-size: 1rem;
+  }
+  #collections {
+    padding: 1.9rem 0;
+  }
 }
 @media only screen and (max-width: 430px) {
   .package {
     padding: 2rem;
     width: 30rem;
     margin: 2rem auto;
+  }
+  #manifesto .bg-manifesto {
+    padding: 12rem 0 2rem 5rem;
+  }
+  #collections {
+    padding-bottom: 0;
   }
 }
