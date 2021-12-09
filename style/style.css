@@ -355,6 +355,14 @@ header {
   max-width: 192rem;
   margin: 0 auto;
 }
+/* Parallax */
+#manifesto {
+  background-image: url("../assets/nicholas-kwok-VBWWscZtszY-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #manifesto .bg-manifesto {
   height: 33.3rem;
   width: 210rem;
@@ -376,7 +384,7 @@ header {
 #moment {
   position: absolute;
   background: #000;
-  top: 25rem;
+  top: 26rem;
   color: #fff;
   width: 45%;
   padding: 8rem 4rem 2rem 4rem;
@@ -450,6 +458,8 @@ header {
   color: #7a7a7a;
   text-decoration: underline;
 }
+
+/* Responsiveness ------------- */
 @media only screen and (max-width: 1850px) {
   #manifesto {
     overflow: hidden;
@@ -461,8 +471,7 @@ header {
     overflow: hidden;
   }
 }
-@media only screen and (max-width: 1750px) {
-}
+
 @media only screen and (max-width: 1585px) {
   #moment {
     width: 60%;
@@ -528,7 +537,7 @@ header {
     width: 100%;
   }
   #manifesto {
-    height: 100rem;
+    height: 130rem;
   }
   .actual_collections {
     display: block;
